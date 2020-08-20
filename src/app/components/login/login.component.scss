@@ -1,0 +1,89 @@
+@import '../../styles/color.scss';
+form{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  .inputwrapper{
+    width: 100%;
+    margin: 0.75rem 0;
+  }
+  .towcoulmwraper{
+    display: flex;
+    justify-content: space-between;
+  }
+  label{
+    margin-top: 1rem 0;
+  }
+  input{
+    height: 2rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    background-color: $c-gray10;
+    border:none;
+    font-weight: 400;
+  }
+  .TwoColum { 
+    width: 48%;
+  }
+  input:focus{
+    outline: none;
+    border: 1px solid $c-main;
+  }
+  .name{
+    display: flex;
+    justify-content: space-between;
+  }
+  svg{
+    fill: $c-main;
+    
+  }
+  .svgWraper{
+    width: 2rem;
+    height: 2rem;
+    margin-top: -2rem;
+    padding: 0.25rem 0.25rem;
+    position: relative;
+    float: right;
+    border-radius: 0rem 0.25rem 0.25rem 0rem;
+  }
+  .svgWraper:hover{
+    background-color: $c-gray20;
+  }
+  .error{
+    color: rgb(218, 22, 22);
+    font-size: 0.75rem;
+  }
+  button{
+    border-width: 0;
+    background-color: $c-main;
+    color: $c-white;
+    padding: 1rem ;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.25rem;
+  }
+  button:focus {
+    outline:0;
+    background-color: $c-main-dark ;
+  }
+  button:hover{
+    background-color: $c-main-dark ;
+    color: $c-white;
+  }
+  .PasswordStrength{
+    margin: 0.25rem auto;
+    width: 80%;
+    height: 0.5rem;
+    border-radius: 1rem;
+    background-color: #585858;
+  }
+}
+
+.logintext{
+  margin-top: 1rem;
+  a{
+    cursor: pointer;
+    color: $c-main-dark;
+  }
+}

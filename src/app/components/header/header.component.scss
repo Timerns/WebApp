@@ -1,0 +1,186 @@
+@import '../../styles/color.scss';
+
+.header{
+  height: 4rem;
+  background-color: $c-main;
+  display: flex;
+  align-items: center;
+  color: $c-white;
+  font-weight: 400;
+  flex-wrap: wrap;
+}
+
+.burgerMenu{
+  width: 3rem;
+  height: 4rem;
+  //background-color: white;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  margin: 0 1rem;
+  svg{
+    width: 2rem;
+    height: 2rem;
+    margin: 0 auto;
+    fill: $c-white;
+  }
+}
+
+.logo{
+  margin: 0 1rem;
+  display: flex;
+  align-items: center;
+  color: $c-black;
+  span{
+    font-weight: 800;
+    font-size: 2rem;
+  }
+}
+
+.nav{
+  z-index: 1;
+  a{
+    margin-left: 1.5rem;
+    color: $c-white;
+    text-decoration: none;
+    font-weight: 400;
+    text-transform: uppercase;
+    
+  }
+  a:hover{
+    opacity: 0.8;
+  }
+}
+
+.research{
+  z-index: 1;
+  margin-left: auto;
+  margin-right: 2rem;
+  display: flex;
+  text-align: center;
+  button:focus {outline:0;}
+  .toolbar-Research {
+    height: 2rem;
+    border-radius: 0px 1rem 1rem 0px;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    svg{
+      fill: $c-main;
+    }
+  }
+
+  input{
+    border: none;
+    height: 2rem;
+    border-radius: 1rem 0px 0px 1rem;
+    padding-left: 1rem;
+  }
+  input:focus{
+    outline: none;
+  }
+}
+
+.account{
+  display: flex;
+  align-items: center;
+  margin: 0 1rem;
+  img{
+    width: 3rem;
+    height: 3rem;
+    background-color: $c-white;
+    border-radius: 50%;
+  }
+  p{
+    margin-right: 1rem;;
+  }
+}
+.account:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+
+
+.authButtons{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+    a{
+      text-decoration: none;
+      width: 4rem;
+      height: 2.25rem;
+      background-color: $c-gray40;
+      margin: 0rem 0.25rem;
+      color: $c-white;
+      text-transform: capitalize;
+      text-align: center;
+      line-height: 2.25rem;
+      border-radius: 0.25rem ;
+      cursor: pointer;
+    }
+  a:last-child{
+    margin-right: 1rem;
+    background-color: $c-second;
+  }
+}
+
+
+@media only screen and (max-width: 900px) {
+  .account p{
+    display: none; 
+  }
+  .research{
+    margin-right: 0.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .research{
+    display: flex;
+    background-color: $c-main-light ;
+    width: 100%;
+    order: 1;
+    margin-right: auto;
+    height: 3rem;
+    align-items: center;
+    opacity: 0;
+    input{
+      width: 60%;
+      margin-left: auto;
+    }
+    button{
+      margin-right: auto;
+    }
+  }
+  .burgerMenu{
+    display: flex;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  .nav{
+    display: flex;
+    opacity: 0;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    order: 2;
+    background-color: $c-main-light ;
+    
+    a{
+      text-align: center;
+      width: 100%;
+      padding: 1rem ;
+      margin-left: 0rem;
+    }
+  }
+}
+
+
+.active{
+  opacity: 1;
+  transition-duration: 250ms;
+}
+

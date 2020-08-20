@@ -1,0 +1,55 @@
+@import '../../styles/color.scss';
+.auth_wraper{
+ justify-content: center;
+ display: flex;
+ padding: 4rem;
+ background-color: #ebebeb;
+ border-radius: 5rem;
+ margin: 4rem;
+}
+.logo{
+  width: 500px;
+}
+
+.logo_wrapper{
+  background-color: $c-main;
+  border-radius: 50%;
+  width: 25em;
+  height: 25rem;
+  svg{
+    fill: $c-main;
+    width: 50%;
+    height: 50%;
+    margin: 6.25rem;
+  }
+}
+.form{
+  width: 500px;
+}
+
+.modalname{
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  color: $c-black;
+  margin-bottom: 1rem;
+  &__brand{
+    color: $c-second;
+    font-size: 1.75rem;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+  .logo{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .modal{
+    width: 90%;
+  }
+  .logo{
+    display: none;
+  }
+}
